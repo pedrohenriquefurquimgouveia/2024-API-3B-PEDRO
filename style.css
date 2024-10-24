@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo:MORF@2&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor1: #2b2d42ff;
+    --cor2: #8d99aeff;
+    --cor3: #edf2f4ff;
+    --cor4: #ef233cff;
+    --cor5: #d90429ff;
+    --font-titulo: "Kablammo", system-ui;
+     --font-texto: "Open Sans", sans-serif;
+
+}
+body{
+    font-family: var(--font-texto);
+    background-color: var(--cor1);
+    color: var(--cor3);
+    height: 100vh;
+}
+
+header {
+   background-color: var(--cor5);
+   text-align: center;
+}
+
+h1 {
+    font-family: var(--font-titulo);
+    font-size: 2rem;
+    color: var(--cor2);
+    padding: 1.2rem 0;
+
+}
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
