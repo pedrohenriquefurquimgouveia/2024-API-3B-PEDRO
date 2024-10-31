@@ -8,8 +8,12 @@ async function vizualizaInfo(){
     const CursoMaisVotado = cursos[0]
     const quantidadedeVoto = Object.values(dados)[0]
 
-    console.log(CursoMaisVotado)
-    console.log(quantidadedeVoto)
+    let paragrafo = document.createElement('p')
+    paragrafo.classList.add('graficos-container__texto')
+    paragrafo.innerHTML = 'entrevistamos <span>${totalEntrvistados} Milhão</span> de brasileiros para descobrir quais os concursos publicos mais querido por todos!'
+
+    const container = document.getElementById('graficos-container')
+    container.appendChild(paragrafo)
 }
 
 vizualizaInfo()
