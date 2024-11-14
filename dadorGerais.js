@@ -5,8 +5,27 @@ async function vizualizaInfo(){
     const dados = await res.json()
 
     const cursos = Object.keys(dados)
+    const votos = Object.values(dados)
     const CursoMaisVotado = cursos[0]
     const quantidadeDeVoto = Object.values(dados)[0]
+
+    
+const data = [
+    {
+        x:concursos_publicos,
+        y:votos,
+        type: 'bar',
+    }
+]
+
+
+
+
+
+
+
+
+
 
     let paragrafo = document.createElement('p')
 
@@ -17,10 +36,13 @@ async function vizualizaInfo(){
     let caixa = document.getElementById('caixa-gráficos')
     caixa.appendChild(paragrafo)
 
-    
+    const graficos = document.createElement('div')
+    grafico.className  = 'grafico'
+    dicument.getElementById('caixa-grafico'),
+    appendChild(grafico)
+    plotly.newPlot(grafico. data)
 
-    const container = document.getElementById('graficos-container')
-    container.appendChild(paragrafo)
+
 }
 
 vizualizaInfo()
